@@ -1,0 +1,12 @@
+#card-padding{
+    padding: 20px;
+}
+.k-textbox{
+    width: 100%;
+}
+#regAction{
+    align-items: flex-end;
+}
+kendo-textbox-container{
+    width: 100%;
+}

@@ -1,0 +1,77 @@
+<div class="row my-3">
+  <div class="col-md-6 col-sm-12"></div>
+  <div class="col-md-6 col-sm-12">
+    <div class="card" id="card-padding">     
+      <form action="" >
+          <div class="form-group">            
+            <input class="k-textbox form-control" placeholder="FirstName">
+          </div>
+          <div class="form-group">
+            <input  class="k-textbox form-control" placeholder="Surname">
+          </div>          
+          <div class="form-group">
+            <input class="k-textbox form-control" placeholder="Department">
+          </div>
+          <div class="form-group">
+            <input class="k-textbox form-control" placeholder="Course">
+          </div>
+          <div class="form-group">
+            <input type="radio" name="gender" id="male" class="k-radio" id="r1">
+            <label for="r1" class="k-radio-label">Male</label>
+            <input type="radio" name="gender" class="k-radio" id="r2">
+            <label for="r2" class="k-radio-label" id="female">Female</label>
+          </div>                   
+          <div class="form-group">
+            <kendo-autocomplete
+            [data]="countylist"
+            [placeholder]="'County of origin'"
+            class="form-control">
+            </kendo-autocomplete>
+          </div>
+          <div class="form-group">
+            <kendo-multiselect
+            [data]="category"
+            [placeholder]="Tag"
+            class="form-control">
+            </kendo-multiselect>
+          </div>
+          
+        </form>
+      
+        <div class="text-right">
+          <button type="button" class="k-button">Cancel</button>
+          <button type="button" class="k-button k-primary">Submit</button>
+        </div>  
+    </div>
+
+  </div>
+</div>
+
+
+
+<button kendoButton [primary]="true">My Kendo UI Button</button>
+
+<button class="k-button">Regular button</button>
+<br />
+<button class="k-button k-primary">Primary button</button>
+
+<form class="k-form">
+    <div class="k-form-field">
+      <input type="checkbox" id="ch1" class="k-checkbox" checked />
+      <label class="k-checkbox-label" for="ch1">Checkbox 1</label>
+
+      <input type="checkbox" id="ch2" class="k-checkbox" checked disabled />
+      <label class="k-checkbox-label" for="ch2">Checkbox 2</label>
+
+      <input type="checkbox" id="ch3" class="k-checkbox">
+      <label class="k-checkbox-label" for="ch3">Checkbox 3</label>
+    </div>
+    <div class="k-form-field">
+      <kendo-textbox-container floatingLabel="first Name">
+        <input kendoTextBox>
+      </kendo-textbox-container>
+    </div>
+    <kendo-textbox-container floatingLabel="Second  Name">
+        <input kendoTextBox>
+      </kendo-textbox-container>
+</form>

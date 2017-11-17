@@ -1,0 +1,33 @@
+<div class="row my-3">
+  <div class="col-sm-12 col-md-6 col-lg-6">
+    <kendo-chart>
+      <kendo-chart-series>
+        <kendo-chart-series-item
+        [data]="mydata">
+        </kendo-chart-series-item>
+      </kendo-chart-series>
+    </kendo-chart>
+  </div>
+
+  <div class="col-sm-12 col-md-6 col-lg-6">
+    <kendo-chart>
+      <kendo-chart-value-axis>
+        <kendo-chart-value-axis-item
+        [title]="{text:'Contributions'}"
+        [min]="0"
+        [max]="100">
+        </kendo-chart-value-axis-item>
+      </kendo-chart-value-axis>      
+      <kendo-chart-category-axis>
+        <kendo-chart-category-axis-item
+        [categories]="categories">
+        </kendo-chart-category-axis-item>
+      </kendo-chart-category-axis>
+      <kendo-chart-series>
+        <kendo-chart-series-item [data]="seriesData" type="line">
+        </kendo-chart-series-item>
+       </kendo-chart-series>
+    </kendo-chart>
+
+  </div>
+</div>
